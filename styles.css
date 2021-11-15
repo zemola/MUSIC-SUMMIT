@@ -62,7 +62,7 @@ header {
 }
 
 .home-page {
-  margin: 35px 20px;
+  margin: 55px 20px;
 }
 
 .title {
@@ -140,6 +140,21 @@ header {
   height: 85px;
 }
 
+.speaker1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.speaker1 .image {
+  width: 100%;
+  position: relative;
+  margin: 10px 20px;
+}
+
+.speaker1 .image img {
+  width: 100%;
+}
+
 
 
 
@@ -174,9 +189,11 @@ header {
   }
 
   .desktop-menu li {
-    padding: 0;
+    list-style: none;
   }
-
+  .desktop-menu li a {
+  text-decoration: none;
+  }
   .toggle-bar .bar {
     width: 30px;
     height: 3px;
