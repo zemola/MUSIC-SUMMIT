@@ -149,6 +149,16 @@ header {
   height: 85px;
 }
 
+.guest-speaker {
+ margin: 30px 40px;
+}
+
+.speaker-list {
+  margin: 30px;
+  align-items: center;
+  text-align: center;
+}
+
 .speaker1 {
   display: flex;
   justify-content: space-evenly;
@@ -156,12 +166,14 @@ header {
 
 .speaker1 .image {
   width: 100%;
+  height: inherit;
   position: relative;
   margin: 10px 20px;
 }
 
 .speaker1 .image img {
   width: 100%;
+  
 }
 
 
@@ -239,6 +251,13 @@ header {
 }
 .join {
   display: none;
+}
+
+.speaker {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 30px 10px;
+  
 }
 
 }
