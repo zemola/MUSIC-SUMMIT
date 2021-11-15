@@ -127,10 +127,19 @@ header {
 
 .icons {
   color: #ec5242;
+  height: 48px;
+  margin: 0 10px;
 }
 
-.lecture span {
+
+.lecture h3 {
   color: #ec5242;
+  text-align: center;
+  padding: 10px 5px;
+}
+
+.content {
+  margin: 5px;
 }
 
 .join {
