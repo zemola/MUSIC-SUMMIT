@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   background: #f7f7f9;
 }
@@ -14,6 +14,10 @@ header {
   background: #fff;
   padding: 26px 28px;
   height: 100px;
+}
+.mobil-display {
+  display: flex;
+  justify-content: space-between;
 }
 
 .toggle-bar {
@@ -28,10 +32,22 @@ header {
   display: block;
 }
 
+.logo {
+  width: 30px;
+}
+
+.close-toggle {
+  position: -100%;
+  font-size: xx-large;
+  color: #fff;
+  z-index: 10000;
+}
+
+
 .desktop-menu {
   display: flex;
   flex-direction: column;
-  background: #6070ffc7;
+  background: #272a31;
   margin: 0;
   width: 100%;
   height: 100vh;
@@ -41,10 +57,13 @@ header {
   opacity: 0;
   position: fixed;
   backdrop-filter: blur(5px);
+  z-index: 1000;
+  
 }
 
 .desktop-menu li {
   padding: 20px 0;
+  list-style: none;
 }
 
 .desktop-menu .desktop-links {
@@ -53,6 +72,8 @@ header {
   font-size: 32px;
   line-height: 44px;
   color: #fff;
+  margin-left: 45%;
+  text-align: center;
 }
 
 .desktop-menu.active {
@@ -83,7 +104,7 @@ header {
 .theme p {
   margin: 10px;
 }
- 
+
 .date p {
   margin-top: 15px;
 }
@@ -102,11 +123,10 @@ header {
   margin: 30px;
   align-items: center;
   text-align: center;
-  
 }
 
 .program .main-program span {
-   width: 30px;
+  width: 30px;
   height: 3px;
   background-color: #ec5242;
   display: block;
@@ -117,8 +137,8 @@ header {
 
 .lecture {
   display: flex;
-  height: inherit;
-  margin: 20px 30px;
+  margin: 10px;
+  padding: 30px 15px;
   background-color: #272a31;
   justify-content: space-around;
   border: 1px solid #313641;
@@ -126,11 +146,16 @@ header {
 }
 
 .icons {
-  color: #ec5242;
-  height: 48px;
-  margin: 0 10px;
+  align-content: center;
+  text-align: center;
+  width: 15%;
 }
 
+.icons a svg {
+  color: #ec5242;
+  height: 48px;
+  margin: 0 5px;
+}
 
 .lecture h3 {
   color: #ec5242;
@@ -150,7 +175,7 @@ header {
 }
 
 .guest-speaker {
- margin: 30px 40px;
+  margin: 30px 40px;
 }
 
 .speaker-list {
@@ -173,18 +198,10 @@ header {
 
 .speaker1 .image img {
   width: 100%;
-  
 }
 
-
-
-
-
-
 @media (min-width: 768px) {
-
-
-   .desktop-menu {
+  .desktop-menu {
     display: flex;
     flex-direction: row;
     width: 90%;
@@ -198,6 +215,9 @@ header {
     padding: 0;
     background-color: #fff;
     text-decoration: none;
+  }
+  .close-toggle {
+    display: none;
   }
 
   .desktop-menu .desktop-links {
@@ -213,7 +233,7 @@ header {
     list-style: none;
   }
   .desktop-menu li a {
-  text-decoration: none;
+    text-decoration: none;
   }
   .toggle-bar .bar {
     width: 30px;
@@ -231,33 +251,30 @@ header {
     display: none;
   }
 
-.program-list {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  justify-content: start;
-  margin: 30px 50px;
-}
+  .program-list {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: start;
+    margin: 30px 50px;
+  }
 
-.program-list .lecture {
-  display: flex;
-  flex-direction: column;
-}
+  .program-list .lecture {
+    display: flex;
+    flex-direction: column;
+  }
 
-.lecture {
-  margin: 10px 5px;
-  text-align: center;
+  .lecture {
+    margin: 10px 5px;
+    text-align: center;
+  }
+  .join {
+    display: none;
+  }
 
-}
-.join {
-  display: none;
-}
-
-.speaker {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  margin: 30px 10px;
-  
-}
-
+  .speaker {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 30px 10px;
+  }
 }
