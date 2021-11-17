@@ -12,9 +12,13 @@ body {
 
 header {
   background: #fff;
-  padding: 26px 28px;
-  height: 100px;
+  height: 120px;
 }
+
+.top-section {
+  display: none;
+}
+
 .mobil-display {
   display: flex;
   justify-content: space-between;
@@ -73,7 +77,6 @@ header {
   line-height: 44px;
   color: #fff;
   margin-left: 45%;
-  text-align: center;
 }
 
 .desktop-menu.active {
@@ -87,8 +90,16 @@ header {
 }
 
 .title {
-  margin: 10px 20px;
-  padding: 10px;
+  width: 92.5%;
+  padding-top: 7rem;
+  margin-inline: auto;
+  min-height: 326.85px;
+  height: auto;
+}
+
+.intro-headline {
+  color: #ec5242;
+  font-size: 18;
 }
 
 .title .main-headline {
@@ -110,6 +121,9 @@ header {
 }
 
 .program {
+  background-image: url(image/repeat-bg.png);
+  background-repeat: repeat;
+  background-position: center;
   background-color: black;
   margin-top: 30px;
   color: #dfe1e6;
@@ -123,6 +137,14 @@ header {
   margin: 30px;
   align-items: center;
   text-align: center;
+}
+
+hr {
+  width: 10%;
+  margin-inline: auto;
+  border: none;
+  height: 3px;
+  background: #ec5242;
 }
 
 .program .main-program span {
@@ -141,30 +163,40 @@ header {
   padding: 30px 15px;
   background-color: #272a31;
   justify-content: space-around;
-  border: 1px solid #313641;
+  border: 2px solid #313641;
   padding: 10px;
+  opacity: 0.9;
 }
 
 .icons {
-  align-content: center;
+  width: 16%;
+  margin: 10% 5%;
   text-align: center;
-  width: 15%;
+  align-self: center;
 }
 
-.icons a svg {
-  color: #ec5242;
-  height: 48px;
-  margin: 0 5px;
+.icons img {
+  width: 100%;
+  align-content: center;
+  display: block;
 }
 
 .lecture h3 {
+  font-size: 1.2rem;
+  margin: 0 3%;
+  align-items: center;
+  width: 30%;
   color: #ec5242;
   text-align: center;
-  padding: 10px 5px;
+  align-self: center;
 }
 
 .content {
-  margin: 5px;
+  font-size: 0.9rem;
+  margin: 5%;
+  width: 60%;
+  align-items: center;
+  align-self: center;
 }
 
 .join {
@@ -175,7 +207,7 @@ header {
 }
 
 .guest-speaker {
-  margin: 30px 40px;
+  margin: 30px 20px;
 }
 
 .speaker-list {
@@ -187,24 +219,27 @@ header {
 .speaker1 {
   display: flex;
   justify-content: space-evenly;
+  margin: 20px 5px;
 }
 
 .speaker1 .image {
-  width: 100%;
-  height: inherit;
-  position: relative;
-  margin: 10px 20px;
+  width: 40%;
 }
 
 .speaker1 .image img {
   width: 100%;
 }
 
+.dicription {
+  width: 60%;
+  padding-left: 5%;
+}
+
 @media (min-width: 768px) {
   .desktop-menu {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 70%;
     height: 20px;
     justify-content: end;
     position: relative;
@@ -215,7 +250,33 @@ header {
     padding: 0;
     background-color: #fff;
     text-decoration: none;
+    cursor: pointer;
   }
+  
+    .top-section {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
+
+
+  .bars {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    background-color:#272a31 ;
+  }
+
+  .bars li {
+    margin: 8px;
+    color: white;
+    font-size: 0.7rem;
+    padding-inline: 0.8%;
+    cursor: pointer;
+  }
+
   .close-toggle {
     display: none;
   }
