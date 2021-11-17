@@ -36,8 +36,8 @@ header {
   display: block;
 }
 
-.logo {
-  width: 30px;
+.main-logo {
+  display: none;
 }
 
 .close-toggle {
@@ -87,6 +87,7 @@ header {
 
 .home-page {
   margin: 55px 20px;
+  background: url(./image/first-section.png);
 }
 
 .title {
@@ -314,6 +315,10 @@ hr {
 
   .close-toggle {
     display: none;
+  }
+
+  .main-logo {
+  display: block;
   }
 
   .desktop-menu .desktop-links {
