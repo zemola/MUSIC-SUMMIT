@@ -1,6 +1,7 @@
 // Getting menu icon element
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".desktop-menu");
+const closeMenu = document.getElementById("close");
 
 menu.addEventListener("click", () => {
   menu.classList.toggle("is-active");
@@ -22,6 +23,10 @@ portfolio.addEventListener("click", () => {
 });
 
 aboutUs.addEventListener("click", () => {
+  closeMobileMenu();
+});
+
+closeMenu.addEventListener("click", () => {
   closeMobileMenu();
 });
 
