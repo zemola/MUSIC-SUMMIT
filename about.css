@@ -31,7 +31,7 @@ p {
   align-items: flex-start;
   justify-content: center;
   width: 95%;
-}
+} 
 
 .nav {
   position: absolute;
@@ -70,12 +70,13 @@ p {
   display: none;
   height: 100vh;
   background-color: rgba(234, 234, 234, 0.9);
-  position: absolute;
+  position: fixed;
   z-index: 5;
   top: 0;
   left: 0;
   border-right: 4px outset #ec5242;
   border-bottom: 2px outset #ec5242;
+  backdrop-filter: blur(5px);
 }
 
 .open {
@@ -147,7 +148,7 @@ p {
 }
 
 .first-section {
-  background: url(images/boeing737cockpit.jpg);
+  background: url(./image/first-section.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -207,13 +208,13 @@ p {
   text-align: center;
 }
 
-.securam {
+.logo {
   width: auto;
   height: 45px;
   margin-left: -50%;
 }
 
-.flex-content .plane {
+.flex-content .logo {
   align-self: center;
   height: 70px;
   margin: 0;
@@ -581,6 +582,7 @@ footer {
 
   .copy-right {
     color: white;
+    font-size: 20px;
   }
 
   .icon {

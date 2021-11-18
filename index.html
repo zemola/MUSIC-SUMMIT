@@ -7,64 +7,76 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <title>NIGERIA MUSIC SUMMIT</title>
 </head>
 <body>
   <header>
-     <div class="top-section">
-          <ul class="bars">
-            <li>
-             <i class="fab fa-facebook-f"></i>
+    <aside class="top-section">
+      <div class="bar-container">
+      <ul class="bars">
+        <li>
+          <i class="fab fa-facebook-f"></i>
+        </li>
+        <li>
+          <i class="fab fa-twitter"></i>
+        </li>
+        <li>
+          <h4>English</h4>
+        </li>
+        <li>
+          <h4>My Page</h4>
+        </li>
+        <li>
+          <h4>Logout</h4>
+        </li>
+      </ul>
+      </div>
+    </aside>
+    <div class="navbar">
+        <div class="logo-DT">
+          <a href="index.html"><img src="./image/logo.jpg" alt="LOGO" class="logo"></a>
+          <div class="menu-bar nav" id="menu">
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+          </div>
+          <div class="cancel" id ='close'>
+            <p>&times;</p>
+          </div>
+        </div>
+
+        <nav class="menu-list" id="nav-mobile">
+          <ul class="items">
+            <li class="home">
+              <a href="index.html">Home</a>
             </li>
-            <li>
-            <i class="fab fa-twitter"></i>
+
+            <li class="links">
+              <a href="about.html">About</a>
             </li>
-            <li>
-              <h4>English</h4>
+            <li class="links">
+              <a href="#">Program</a>
             </li>
-            <li>
-              <h4>My Page</h4>
+            <li class="links">
+              <a href="#">Join</a>
             </li>
-            <li>
-              <h4>Logout</h4>
+            <li class="links">
+              <a href="#">Sponsor</a>
+            </li>
+            <li class="links">
+              <a href="#">News</a>
             </li>
           </ul>
-        </div>
-    <nav mobile-nav>
-      <div class="mobil-display">
-        <a class="main-logo" href="index.html">
-        <img src="./image/logo.jpg" alt=""></a>
-        <div class="toggle-bar" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <div class="close-toggle" id="close"><p>&times;</p></div>
-      </div>
-      <nav>
-        <ul class="desktop-menu">
-          <li>
-            <a href="about.html" class="desktop-links portfolio-link">About</a>
-          </li>
-          <li>
-            <a href="main-program" class="desktop-links about-link">Program</a>
-          </li>
-          <li>
-            <a href="#join" class="desktop-links contact-link">Join</a>
-          </li>
-          <li>
-            <a href="#sponsor" class="desktop-links contact-link">Sponsor</a>
-          </li>
-          <li>
-            <a href="#sponsor" class="desktop-links contact-link">Sponsor</a>
-          </li> 
-        </ul>
+          <div class="company">
+            <a href="index.html">Securam Circle</a>
+          </div>
         </nav>
-    </nav>
+    </div>
   </header>
-</body>
+
 <section class="home-page">
   <div class="title">
     <h1 class="intro-headline">"Hello!! It's Afrobeat to the world"</h1>
@@ -154,7 +166,7 @@
  <div class="section-speakers-heading" id="featured">
       <h2>Featured Speakers</h2>
       <hr />
-      <div class="people" id="speakers"></div>
+      <div class="featured-speakers" id="speakers"></div>
     </div>
 
 <section class="partners-section" id="partners">
@@ -178,6 +190,17 @@
         </div>
       </div>
     </section>
+     <footer>
+      <div class="f-styling">
+        <div class="my-logo">
+          <a href="#"><img src="./image/Logo_WhiteBackground_Landscape.png" alt=""></a>
+        </div>
+        <p class="copy-right">
+          Securam Entertainment
+        </p>
+      </div>
+    </footer>
 <script src="app.js"></script>
+</body>
 </html>
 

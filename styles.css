@@ -1,3 +1,8 @@
+@font-face {
+  font-family: cocogoose;
+  src: url(fonts/Cocogoose-font.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,84 +10,146 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "lato", sans-serif;
   font-size: 16px;
   background: #f7f7f9;
 }
 
-header {
-  background: #fff;
-  height: 120px;
+.menu-content {
+  display: none;
 }
 
 .top-section {
+  background-color: #3e3e3e;
   display: none;
 }
 
-.mobil-display {
-  display: flex;
-  justify-content: space-between;
-}
-
-.toggle-bar {
-  margin: 20px;
-}
-.toggle-bar .bar {
-  width: 30px;
-  height: 3px;
-  background-color: #272a31;
-  margin-top: 8px;
-  transition: all 0.5s ease-in-out;
-  display: block;
-}
-
-.main-logo {
-  display: none;
-}
-
-.close-toggle {
-  font-size: xx-large;
-  color: #fff;
-  z-index: 10000;
-  margin: 5px 30px;
-}
-
-
-.desktop-menu {
+.navbar {
   display: flex;
   flex-direction: column;
-  background: #272a31;
+  align-items: flex-start;
+  justify-content: center;
+  width: 95%;
+} 
+
+.nav {
+  position: absolute;
+  top: 1rem;
+  cursor: pointer;
+  left: 1rem;
+}
+
+.cancel {
+  display: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.company {
+ display: none;
+}
+
+.cancel p {
+  font-size: 3.2rem;
+  position: absolute;
   margin: 0;
+  top: 1.3rem;
+  left: 1.3rem;
+  color: black;
+  z-index: 100;
+}
+
+.logo-DT a {
+  display: none;
+  position: absolute;
+  top: 1.3rem;
+  right: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  width: auto;
+  height: 45px;
+  margin-left: -50%;
+}
+
+.menu-list {
   width: 100%;
+  display: none;
   height: 100vh;
-  padding: 40px 28px;
-  top: 0;
-  left: -100%;
-  opacity: 0;
+  background-color: rgba(234, 234, 234, 0.9);
   position: fixed;
-  backdrop-filter: blur(5px);
-  z-index: 1000;
-  
-}
-
-.desktop-menu li {
-  padding: 20px 0;
-  list-style: none;
-}
-
-.desktop-menu .desktop-links {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-  color: #fff;
-  margin-left: 20%;
-}
-
-.desktop-menu.active {
+  z-index: 5;
+  top: 0;
   left: 0;
-  opacity: 1;
-  transition: all 0.5s ease-in-out;
+  border-right: 4px outset #ec5242;
+  border-bottom: 2px outset #ec5242;
+  backdrop-filter: blur(5px);
+}
+
+.open {
+  height: 100vh;
+}
+
+.items {
+  padding: 0;
+  margin-top: 8rem;
+}
+
+.items li {
+  display: block;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.icon {
+  width: 30px;
+  height: 5px;
+  margin: 5px 0;
+  background-color: #272a31;
+}
+
+.home a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+}
+
+.company {
+  display: none;
+}
+
+.company a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-logo a {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #ec5242;
+  background-color: #f7f7f8;
+}
+
+.home a:hover {
+  color: #ec5242;
+  border-bottom: 1px solid #ec5242;
+  background-color: #f7f7f8;
+  font-size: 1.2rem;
+  padding-inline: 11%;
+  padding-block: 5%;
 }
 
 .home-page {
@@ -100,7 +167,7 @@ header {
 
 .intro-headline {
   color: #ec5242;
-  font-size: 18;
+  font-size: 18px;
 }
 
 .title .main-headline {
@@ -206,6 +273,8 @@ hr {
   color: #dfe1e6;
   margin: 20px 50px;
   height: 85px;
+  font-size: 25px;
+  font-family: sans-serif;
 }
 
 .section-speakers-heading {
@@ -222,7 +291,7 @@ hr {
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
-  margin-block: 12%;
+  margin-block: 5%;
 }
 
 .speaker-image-section {
@@ -261,7 +330,7 @@ hr {
 .partners-heading {
   text-align: center;
   color: #fff;
-  padding-top: 10%;
+  margin: 5px;
 }
 
 .partners-list img {
@@ -272,8 +341,7 @@ hr {
 
 .partners-flex {
   width: 90%;
-  margin: auto;
-  margin-top: 10%;
+  margin: 2%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -288,33 +356,47 @@ hr {
   height: 40px;
 }
 
+footer {
+  margin: 5px;
+}
+
+.f-styling {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+.copy-right {
+  font-size: 1rem;
+  margin: 20px;
+}
+
 @media (min-width: 768px) {
-  .desktop-menu {
-    display: flex;
-    flex-direction: row;
-    width: 70%;
-    height: 20px;
-    justify-content: end;
-    position: relative;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    margin-top: 0;
-    padding: 0;
-    background-color: #fff;
-    text-decoration: none;
-    cursor: pointer;
+  .nav {
+    display: none;
   }
-  
-    .top-section {
-    display: block;
-    position: relative;
-    width: 100%;
-    margin: auto;
+
+  p {
+    line-height: 1.3rem;
   }
 
   hr {
     width: 3%;
+  }
+
+  .top-section {
+    display: block;
+    position: relative;
+  }
+
+  .bar-container {
+    width: 85%;
+    margin: auto;
+    height: 30px;
+    padding-top: 5px;
   }
 
   .bars {
@@ -322,56 +404,147 @@ hr {
     list-style: none;
     justify-content: flex-end;
     align-items: center;
-    background-color:#272a31 ;
+    margin-block: 0;
+    padding-left: 0;
   }
 
   .bars li {
-    margin: 8px;
     color: white;
     font-size: 0.7rem;
     padding-inline: 0.8%;
     cursor: pointer;
   }
 
-  .close-toggle {
-    display: none;
+  header {
+    background-color: #fff;
   }
 
-  .main-logo {
-  display: block;
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 82%;
+    margin: 0 auto;
+    position: unset;
   }
 
-  .desktop-menu .desktop-links {
-    padding: 0 16px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    color: #344563;
-  }
-
-  .desktop-menu li {
-    list-style: none;
-  }
-  .desktop-menu li a {
+  .logo-DT a {
+    position: unset;
+    display: block;
+    font-size: 2rem;
     text-decoration: none;
+    color: #ec5242;
   }
-  .toggle-bar .bar {
-    width: 30px;
-    height: 3px;
-    background-color: #6070ff;
-    margin: 8px auto;
-    transition: all 0.5s ease-in-out;
+
+  .logo-DT {
+    cursor: pointer;
+    width: auto;
+  }
+
+  .home a {
     display: none;
   }
 
-  #mobile-menu {
+  .links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    margin-right: 2rem;
+  }
+
+  .theme {
+    width: 70%;
+  }
+
+  .company a {
+    text-decoration: none;
+    border: 2px solid #ec5242;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ec5242;
+    letter-spacing: 2px;
+    padding-inline: 0.2rem;
+    padding-block: 0.2rem;
+    white-space: nowrap;
+  }
+
+  .intro-headline {
+    color: #ec5242;
+    font-size: 25px;
+}
+
+  .title .main-headline {
+    color: #ec5242;
+    font-size: 40px;
+  }
+  .footer-logo a {
+    color: white;
+  }
+
+  .logo-DT a:hover {
+    color: #ec5242;
+    font-size: 2.2rem;
+  }
+
+  .cancel {
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .cancel p {
+    font-size: 3.2rem;
     position: absolute;
-    top: 10%;
-    right: 5%;
+    margin: 0;
+    top: 1.3rem;
+    left: 1.3rem;
+    color: black;
+    z-index: 100;
+  }
+
+  .menu-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: unset;
+    border: none;
+    position: unset;
+    background-color: #fff;
+    width: 164%;
+  }
+
+  .items {
+    margin-block: 0;
+  }
+
+  .items li {
+    display: inline-block;
+    padding: 0;
+  }
+
+  .company {
+    display: block;
+    margin-top: 4px;
+  }
+
+  .web-image img {
     display: none;
   }
 
+  .links a:hover {
+    color: #ec5242;
+    background-color: #f7f7f8;
+    transition: 0.6s;
+  }
+
+  .links {
+    flex-grow: 1;
+  }
+
+  .company a:hover {
+    border-color: black;
+  }
   .program-list {
     display: flex;
     flex-direction: row;

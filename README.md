@@ -4,7 +4,7 @@ A capstone project for my first module at microverse, creating from the template
 # CAPSTONE PROJECT
 
 ## Video Presentation
-[Click Here to view presentation video]()
+[Click Here to view presentation video](https://www.loom.com/share/5a1e817af02d4145b97bfeaf9a062cf2)
 
 ## DESKTOP VIEW
 ![screenshot](./image/desktopversionsc.PNG)SCREENSHOT OF DESKTOP VERSION )
@@ -21,7 +21,7 @@ A capstone project for my first module at microverse, creating from the template
 
 ## Live Demo
 
-[Live Demo Link](https://zemola.github.io/MY-PORTFOLIO/)
+[Live Demo Link](https://zemola.github.io/MUSIC-SUMMIT/)
 
 
 
