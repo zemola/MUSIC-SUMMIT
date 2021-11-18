@@ -30,7 +30,7 @@ body {
   align-items: flex-start;
   justify-content: center;
   width: 95%;
-} 
+}
 
 .nav {
   position: absolute;
@@ -46,7 +46,7 @@ body {
 }
 
 .company {
- display: none;
+  display: none;
 }
 
 .cancel p {
@@ -222,7 +222,6 @@ hr {
   display: block;
   margin-left: 30px;
   align-items: center;
-  left: -50;
 }
 
 .lecture {
@@ -232,7 +231,6 @@ hr {
   background-color: #272a31;
   justify-content: space-around;
   border: 2px solid #313641;
-  padding: 10px;
   opacity: 0.9;
 }
 
@@ -473,12 +471,13 @@ footer {
   .intro-headline {
     color: #ec5242;
     font-size: 25px;
-}
+  }
 
   .title .main-headline {
     color: #ec5242;
     font-size: 40px;
   }
+
   .footer-logo a {
     color: white;
   }
@@ -545,6 +544,7 @@ footer {
   .company a:hover {
     border-color: black;
   }
+
   .program-list {
     display: flex;
     flex-direction: row;
@@ -562,6 +562,7 @@ footer {
     margin: 10px 5px;
     text-align: center;
   }
+
   .join {
     display: none;
   }
@@ -589,7 +590,5 @@ footer {
     width: 85%;
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
-  }
-
-  
+  } 
 }
