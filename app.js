@@ -18,7 +18,6 @@ openMenu.addEventListener('click', openMobileMenu);
 closeMenu.addEventListener('click', closeMobileMenu);
 
 // The speker Selection
-// const speakersContainer = document.getElementById('speakers');
 const data = [
   {
     id: '1',
@@ -121,5 +120,4 @@ window.onload = () => {
     speakerSection.appendChild(contentSection);
     speakerContainer.appendChild(speakerSection);
   });
-
 };
