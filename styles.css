@@ -45,10 +45,6 @@ body {
   z-index: 10;
 }
 
-.company {
-  display: none;
-}
-
 .cancel p {
   font-size: 3.2rem;
   position: absolute;
@@ -553,14 +549,14 @@ footer {
     margin: 30px 50px;
   }
 
-  .program-list .lecture {
-    display: flex;
-    flex-direction: column;
-  }
-
   .lecture {
     margin: 10px 5px;
     text-align: center;
+  }
+
+  .program-list .lecture {
+    display: flex;
+    flex-direction: column;
   }
 
   .join {
