@@ -10,7 +10,7 @@ A capstone project for my first module at microverse, creating from the template
 ![screenshot](./image/desktopversionsc.PNG)SCREENSHOT OF DESKTOP VERSION )
 
 ## MOBILE VIEW
-![screenshot](./image/mobile versionSC.PNG)SCREENSHOT OF MOBILE VERSION )
+![screenshot](./image/mobileversionSC.PNG)SCREENSHOT OF MOBILE VERSION )
 
 ## Built With
 
