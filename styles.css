@@ -168,12 +168,14 @@ body {
 
 .title .main-headline {
   color: #ec5242;
-  font-size: 30px;
+  font-size: 60px;
+  font-weight: 900;
 }
 
 .theme {
   border: 1px solid #dfe1e6;
   margin: 25px 10px;
+  border-color: white;
 }
 
 .theme p {
@@ -222,8 +224,8 @@ hr {
 
 .lecture {
   display: flex;
-  margin: 10px;
-  padding: 30px 15px;
+  margin: 1px 10px;
+  padding: 5px;
   background-color: #272a31;
   justify-content: space-around;
   border: 2px solid #313641;
@@ -232,7 +234,7 @@ hr {
 
 .icons {
   width: 16%;
-  margin: 10% 5%;
+  margin: 5%;
   text-align: center;
   align-self: center;
 }
@@ -273,11 +275,19 @@ hr {
 
 .section-speakers-heading {
   text-align: center;
+  background-color: #dfe1e6;
 }
 
 .featured-speakers {
   width: 92.5%;
   margin: auto;
+}
+
+.speaker-designation {
+  margin-block: 0;
+  font-size: 0.95rem;
+  color: #ec5242;
+  text-align: left;
 }
 
 .speaker-section {
@@ -299,7 +309,7 @@ hr {
 }
 
 .speaker-details {
-  padding-left: 3%;
+  padding-left: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -319,6 +329,7 @@ hr {
 
 .partners-section {
   background-color: #3f444f;
+  padding: 2%;
 }
 
 .partners-heading {
@@ -328,14 +339,13 @@ hr {
 }
 
 .partners-list img {
-  filter:
-    invert(100%) sepia(0%) saturate(0%) hue-rotate(311deg)
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(311deg)
     brightness(102%) contrast(105%);
 }
 
 .partners-flex {
   width: 90%;
-  margin: 2%;
+  margin: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -471,7 +481,8 @@ footer {
 
   .title .main-headline {
     color: #ec5242;
-    font-size: 40px;
+    font-size: 80px;
+    font-weight: 900;
   }
 
   .footer-logo a {
@@ -552,6 +563,28 @@ footer {
   .lecture {
     margin: 10px 5px;
     text-align: center;
+  }
+
+  .section-speakers-heading {
+    text-align: center;
+    background-color: #dfe1e6;
+    padding: 0 5%;
+  }
+
+  .speaker-designation {
+    margin-block: 0;
+    font-size: 0.95rem;
+    color: #ec5242;
+    text-align: left;
+    margin-bottom: 20px;
+    width: 60%;
+  }
+
+  .speaker-history {
+    font-size: 0.85rem;
+    width: 45%;
+    margin-top: 5%;
+    text-align: left;
   }
 
   .program-list .lecture {
