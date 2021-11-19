@@ -339,7 +339,8 @@ hr {
 }
 
 .partners-list img {
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(311deg)
+  filter:
+    invert(100%) sepia(0%) saturate(0%) hue-rotate(311deg)
     brightness(102%) contrast(105%);
 }
 
@@ -582,7 +583,7 @@ footer {
 
   .speaker-history {
     font-size: 0.85rem;
-    width: 45%;
+    width: 60%;
     margin-top: 5%;
     text-align: left;
   }
@@ -600,19 +601,10 @@ footer {
     margin-inline: 2.5%;
     width: 95%;
   }
-
-  .section-speakers-heading {
-    text-align: center;
-  }
-
+  
   .speaker-image {
     width: 120%;
     margin-block: 0;
-  }
-
-  .speaker-history {
-    margin: 0;
-    width: 95%;
   }
 
   .featured-speakers {
