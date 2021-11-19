@@ -275,7 +275,7 @@ hr {
 
 .section-speakers-heading {
   text-align: center;
-  background-color: #dfe1e6;
+  background-color: white;
 }
 
 .featured-speakers {
@@ -568,7 +568,7 @@ footer {
 
   .section-speakers-heading {
     text-align: center;
-    background-color: #dfe1e6;
+    background-color: white;
     padding: 0 5%;
   }
 
@@ -577,7 +577,6 @@ footer {
     font-size: 0.95rem;
     color: #ec5242;
     text-align: left;
-    margin-bottom: 20px;
     width: 60%;
   }
 
