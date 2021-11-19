@@ -288,6 +288,7 @@ hr {
   font-size: 0.95rem;
   color: #ec5242;
   text-align: left;
+  font-size: 12px;
 }
 
 .speaker-section {
@@ -318,6 +319,7 @@ hr {
 .speaker-name {
   margin-block: 0;
   margin-right: auto;
+  font-size: 16px;
 }
 
 .speaker-history {
@@ -572,8 +574,15 @@ footer {
     padding: 0 5%;
   }
 
+  .speaker-name {
+    margin-block: 0;
+    margin-right: auto;
+    /* font-size: 16px; */
+  }
+
   .speaker-designation {
     margin-block: 0;
+    font-size: 12px;
     font-size: 0.95rem;
     color: #ec5242;
     text-align: left;
